@@ -3,21 +3,28 @@
     src: url(/assets/fonts/MartelSans-Bold.ttf);
 }
 
+@font-face {
+    font-family: MartelSans-ExtraBold;
+    src: url(/assets/fonts/MartelSans-ExtraBold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-color: black;
+}
 .main {
     background-image: url(/assets/images/bg.jpg);
     background-position: center center;
-    background-size: ;
-    height: 80vh;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
     position: relative;
 }
 
 .opacity-for-bg {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
 
     background-color: black;
@@ -28,10 +35,83 @@
     top: 0;
 }
 
-nav{
+nav {
     margin: auto;
     max-width: 80vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 62px;
+    position: relative;
+    z-index: 24;
+}
+
+nav span img {
+    color: rgb(114, 0, 0) !important;
+    width: 114px;
+    position: relative;
+    z-index: 24;
+
+}
+
+.hero {
+    height: calc(100% - 61px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 9;
+    font-family: MartelSans-Bold;
+    color: white;
+    gap: 10px;
+    padding-right: 29px;
+    padding-left: 29px;
+}
+
+
+.hero> :first-child {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+
+.horizontal-line-after-main{
+    height: 5px;
+    background-color: gray;
+}
+
+@media screen and (max-width:440px) {
+    .hero> :first-child {
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .hero> :nth-child(2) {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .hero> :nth-child(3) {
+        font-size: 13px;
+        font-weight: 400;
+        text-align: center;
+        
+    }
+
 }
