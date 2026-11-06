@@ -1,0 +1,37 @@
+@font-face {
+    font-family: MartelSans-Bold;
+    src: url(/assets/fonts/MartelSans-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url(/assets/images/bg.jpg);
+    background-position: center center;
+    background-size: ;
+    height: 80vh;
+    position: relative;
+}
+
+.opacity-for-bg {
+    height: 80vh;
+    width: 100%;
+
+    background-color: black;
+
+    opacity: 0.65;
+    position: absolute;
+
+    top: 0;
+}
+
+nav{
+    margin: auto;
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
