@@ -8,16 +8,25 @@
     src: url(assets/fonts/MartelSans-ExtraBold.ttf);
 }
 
+@font-face {
+    font-family: MartelSans-Regular;
+    src: url(assets/fonts/MartelSans-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: black;
 }
+
+
 .main {
     background-image: url(assets/images/bg.jpg);
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
     height: 70vh;
     position: relative;
@@ -54,6 +63,42 @@ nav span img {
 
 }
 
+.right-buttons {
+    display: flex;
+    gap: 30px;
+    color: white;
+    font-family: MartelSans-Bold;
+    font-size: 13px;
+    text-align: center;
+}
+
+.translate-button {
+    display: flex;
+    border: 2px solid gray;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px 9px 1px 9px;
+    gap: 12px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.translate-button span svg{
+    padding-top: 2px;
+}
+
+.signin-button {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 4px 14px 1px 14px;
+    height: 26px;
+    cursor: pointer;
+}
+
 .hero {
     height: calc(100% - 61px);
     display: flex;
@@ -62,7 +107,6 @@ nav span img {
     flex-direction: column;
     position: relative;
     z-index: 9;
-    font-family: MartelSans-Bold;
     color: white;
     gap: 10px;
     padding-right: 29px;
@@ -71,29 +115,75 @@ nav span img {
 
 
 .hero> :first-child {
+    font-family: MartelSans-Bold;
     font-size: 48px;
     font-weight: 900;
     text-align: center;
 }
 
 .hero> :nth-child(2) {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 18px;
+    font-family: MartelSans-Regular;
+    font-weight: 200;
     text-align: center;
 }
 
 .hero> :nth-child(3) {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 13px;
+    font-family: MartelSans-Regular;
+    /* font-weight: 100; */
     text-align: center;
 
 }
 
 
-.horizontal-line-after-main{
+.horizontal-line-after-main {
     height: 5px;
     background-color: gray;
 }
+
+.email-id-input{
+    display: flex;
+    border: 1px solid gray;
+
+}
+
+.email-input{
+    background-color: rgba(0, 0, 0, 0.221);
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    padding-left: 2px;
+}
+
+
+
+.genral-email-id{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:440px) {
     .hero> :first-child {
@@ -101,17 +191,18 @@ nav span img {
         font-size: 30px;
         line-height: 40px;
     }
+
     .hero> :nth-child(2) {
         font-size: 18px;
         font-weight: 400;
         text-align: center;
     }
-    
+
     .hero> :nth-child(3) {
         font-size: 13px;
         font-weight: 400;
         text-align: center;
-        
+
     }
 
 }
