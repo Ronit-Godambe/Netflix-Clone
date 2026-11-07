@@ -1,11 +1,11 @@
 @font-face {
     font-family: MartelSans-Bold;
-    src: url(/assets/fonts/MartelSans-Bold.ttf);
+    src: url(assets/fonts/MartelSans-Bold.ttf);
 }
 
 @font-face {
     font-family: MartelSans-ExtraBold;
-    src: url(/assets/fonts/MartelSans-ExtraBold.ttf);
+    src: url(assets/fonts/MartelSans-ExtraBold.ttf);
 }
 
 * {
@@ -16,7 +16,7 @@ body{
     background-color: black;
 }
 .main {
-    background-image: url(/assets/images/bg.jpg);
+    background-image: url(assets/images/bg.jpg);
     background-position: center center;
     background-size: max(1200px, 100vw);
     height: 70vh;
